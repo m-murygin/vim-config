@@ -53,10 +53,6 @@ set wildmenu
 " Show partial commands in the last line of the screen
 set showcmd
 
-" Highlight searches (use <C-L> to temporarily turn off highlighting; see the
-" mapping of <C-L> below)
-set hlsearch
-
 "------------------------------------------------------------
 " Usability options {{{1
 "
@@ -72,10 +68,6 @@ set number
 
 " Allow backspacing over autoindent, line breaks and start of insert action
 set backspace=indent,eol,start
-
-" When opening a new line and no filetype-specific indenting is enabled, keep
-" the same indent as the line you're currently on. Useful for READMEs, etc.
-set autoindent
 
 " Stop certain movements from always going to the first character of a line.
 " While this behaviour deviates from that of Vi, it does what most users
@@ -100,11 +92,6 @@ set t_vb=
 
 " Enable use of the mouse for all modes
 set mouse=a
-
-" Set the command window height to 2 lines, to avoid many cases of having to
-" "press <Enter> to continue"
-set cmdheight=1
-
 
 "------------------------------------------------------------
 " Indentation options {{{1
