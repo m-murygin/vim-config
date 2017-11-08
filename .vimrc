@@ -1,6 +1,9 @@
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
 
+" Keep at least 10 lines as the bottom
+set scrolloff=10
+
 " Cursor line
 set cursorline
 hi cursorline term=bold cterm=bold ctermfg=Green guibg=Grey40
