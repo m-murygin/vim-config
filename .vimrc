@@ -1,13 +1,6 @@
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
 
-" Keep at least 10 lines as the bottom
-set scrolloff=10
-
-" Cursor line
-set cursorline
-hi cursorline term=bold cterm=bold ctermfg=Green guibg=Grey40
-
 "------------------------------------------------------------
 " Features {{{1
 "
@@ -75,6 +68,7 @@ set hlsearch
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
+set number
 
 " Allow backspacing over autoindent, line breaks and start of insert action
 set backspace=indent,eol,start
@@ -117,10 +111,17 @@ set cmdheight=1
 "
 " Indentation settings according to personal preference.
 
-" Indentation settings for using 2 spaces instead of tabs.
+" Indentation settings for using 4 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
 set shiftwidth=2
 set softtabstop=2
 set expandtab
 
 "------------------------------------------------------------
+
+" My configs
+set cursorline
+hi cursorline term=bold cterm=bold ctermfg=Green guibg=Grey40
+
+set scrolloff=10
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
